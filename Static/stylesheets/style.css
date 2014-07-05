@@ -1,0 +1,354 @@
+::selection {
+    color: #ffffff;
+    background: #ef6967;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background: #ef6967;
+}
+
+a {
+    text-decoration: none;
+    color: #474a66;
+    -webkit-transition: all .2s;
+       -mox-transition: all .2s;
+            transition: all .2s;
+}
+
+a:hover {
+    color: #ef6967;
+}
+
+.mainHeader {
+    background: #ffffff;
+    height: 100px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.logo {
+    margin-top: 0.75em;
+}
+
+.mainNav ul {
+    float: right;
+}
+
+.mainNav li {    
+    display: inline-block;
+    padding-left: 0.5em;
+    text-align: right;
+    line-height: 100px;
+}
+
+.mainNav a {
+    width: 100%;
+    padding: 0.25em 0.5em;
+    height: auto;
+    font-size: 24px;
+    color: #303030;
+    border-radius: 5px;
+}
+
+.mainNav a:hover {
+    color: #ffffff;
+    background: #474a66;
+    border-radius: 5px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.mastBanner {
+    height: auto;
+    background-image: url(../images/bannerBackground.jpg); 
+    background-size: cover;
+    background-position: bottom;
+}
+
+.tagline img {
+    max-width: 100%;
+    height: auto;
+}
+
+.callToAction-container {
+    width: 250px;
+    padding-bottom: 5em;
+}
+
+.callToAction {
+    display: inline-block;
+    width: 250px;
+    height: 3.5em;
+    line-height: 3.5em;
+    border-radius: 0.25em;
+    text-align: center;
+    background: #ffffff;
+    color: #303030;
+    font-size: 24px;
+    border: 2px solid #ffffff;  
+}
+
+.callToAction:hover {
+    background: #474a66;
+    color: #ffffff;
+}
+
+.description {
+    background: #959595;
+    text-align: center;
+}
+
+.description p {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    font-family: arvo, georgia, serif;
+    font-size: 22px;
+    width: 70%;
+    line-height: 2;
+    padding: 80px 0;
+}
+
+.featuredGear h2 {
+    margin: 50px auto;
+    width: 31%;
+    text-align: center;
+    padding: 0;
+    border: 2px solid #303030;
+    border-left: none; border-right: none;
+}
+
+.featuredItem {
+    position: relative;
+    font-family: arvo, georgia, serif;
+    -webkit-transition: all .2s;
+       -mox-transition: all .2s;
+            transition: all .2s;
+}
+
+.featuredItem figure {
+    min-height: 190px;
+    max-height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+
+.featuredItem figure:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    -webkit-transition: all .2s;
+       -mox-transition: all .2s;
+            transition: all .2s;
+}
+
+.featuredItem:hover figure:after {
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 48, 48, 0.9);
+}
+
+.featuredItem img {
+    min-width: 30.36%;
+}
+
+.featuredItem figcaption {
+    position: absolute;
+    left: 0; right: 0;
+    bottom: -30%;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transition: all .2s;
+       -mox-transition: all .2s;
+            transition: all .2s;
+}
+
+.featuredItem:hover figcaption {
+    bottom: 35%;
+}
+
+.featuredItem figcaption p {
+    width: auto;
+    color: #474a66;
+    background: rgba(255,255,255,0.9);
+    padding: 0.75em;
+}
+
+.featuredItem:hover figcaption p {
+    background: #ffffff;
+}
+
+.moreDetails {
+    display: block;
+    visibility: hidden;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all .2s;
+       -mox-transition: all .2s;
+            transition: all .2s;
+}
+
+.moreDetails:hover {
+    background: #474a66;
+    color: #ffffff;
+}
+
+.featuredItem:hover .moreDetails {
+    visibility: visible;
+}
+
+.browse {
+    margin-top: 50px;
+}
+
+.browseNav h3 {
+    border: 1px solid #e0e0e0;
+    border-left: none; border-right: none;
+}
+
+.browseNav ul {
+    margin-top: 1em;
+}
+
+.browseNav li {
+    padding-top: 5px;
+}
+
+.browseNav li::first-child {
+    padding-top: 0px;
+}
+
+.browseNav a {
+    display: block;
+    width: 100%;
+}
+
+.browseNav a:hover {
+    color: #ffffff;
+    background: #474a66;
+    padding-left: 1em;
+}
+
+.usedGear figure {
+    min-height: 172px;
+    max-height: 172px;
+    overflow: hidden;
+}
+
+.usedGear img {
+    min-width: 30.36%;
+}
+
+.usedItem figcaption {
+}
+
+.usedItem figcaption a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.usedItem figcaption p {
+    font-size: 16px;
+    color: #949494;
+}
+
+.mainFooter {
+    background: #959595;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mainFooter a {
+    color: ##474a66;
+}
+
+.mainFooter a:hover {
+    color: #ffffff;
+}
+
+.mainFooter {
+    padding-top: 50px;
+}
+
+.mainFooter p {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .mainHeader {
+        height: auto;
+    }
+                    
+    .mainNav ul {
+         display: none;
+        float: none;
+    }
+        
+    .mainNav li {
+        line-height: normal;
+        display: block;
+        text-align: center;
+        padding-top: 1em;
+    }
+                    
+    .mainNav a {
+        font-size: 20px;                
+    }
+        
+    .nav-toggle {
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+             -o-user-select: none;
+                user-select: none;
+        width: 70px;
+        height: 55px;
+        float: right;
+        text-indent: -9999px;
+        overflow: hidden;
+        display: inline-block;
+        margin-top: -75px;
+        background: #474a66 url("../images/hamburger.gif") no-repeat 50% 33%;
+    }
+    
+    .tagline {
+        width: 100%;
+    }
+                    
+    .tagline img {
+        max-width: 100%;
+        height: auto;
+    }
+                    
+    .callToAction {
+        font-size: 20px;
+    }
+    
+    .description p {
+        width: 95%;
+        font-size: 15px;
+    }
+    
+    .featuredItem, .usedItem {
+        margin-bottom: 20px;
+    }
+    
+    .featuredGear h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
